@@ -1,0 +1,112 @@
+body {
+    background: url('https://images.unsplash.com/photo-1529067602264-2c4c2d58f8e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fG1vdmllfGVufDB8fHx8MTY4MDQ3NjgwNw&ixlib=rb-1.2.1&q=80&w=1920') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for contrast */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #FFD700; /* Gold color for a cinematic feel */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+#word {
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 36pt;
+    color: #FFD700;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#guessBox {
+    height: 50px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 24pt;
+    margin-bottom: 10px;
+    border: 2px solid #FFD700;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.button {
+    background-color: #FF4500; /* Red-Orange color for buttons */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #FF6347; /* Tomato color on hover */
+}
+
+.button:active {
+    background-color: #FF4500; /* Slightly darker on click */
+    transform: translateY(2px);
+}
+
+#guesses {
+    text-align: center;
+    font-size: 24pt;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    h1, h2 {
+        font-size: 24pt;
+    }
+
+    #word {
+        font-size: 28pt;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    #guessBox {
+        font-size: 20pt;
+        height: 40px;
+    }
+
+    #guesses {
+        font-size: 20pt;
+    }
+}
